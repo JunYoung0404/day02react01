@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Hello from "./Hello";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const App = () => {
+    return (
+      <>
+        <h1>Hello, World!</h1>
+        <p>This is a simple React app.</p>
+        <Hello/>
+      </>
+    );
+  }
 
-export default App;
+  // 컴포넌트를 모듈에 등록
+  // -> 프로젝트의 모든 JS파일에서 import 가능
+  export default App;
